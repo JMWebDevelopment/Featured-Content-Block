@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name:       Featured Post Block
+ * Plugin Name:       Featured Content Block
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Version:           1.0.0
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       featured-post-block
+ * Text Domain:       featured-content-block
  *
- * @package           featured-post-block
+ * @package           featured-content-block
  */
 
 /**
@@ -18,15 +18,15 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function featured_post_block_featured_post_block_block_init() {
+function featured_content_block_featured_content_block_block_init() {
 	register_block_type(
 		__DIR__ . '/build',
 		array(
-			'render_callback' => 'featured_post_block_featured_post_block_render_callback',
+			'render_callback' => 'featured_content_block_featured_content_block_render_callback',
 		)
 	);
 }
-add_action( 'init', 'featured_post_block_featured_post_block_block_init' );
+add_action( 'init', 'featured_content_block_featured_content_block_block_init' );
 
 /**
  * Render callback function.
@@ -37,7 +37,7 @@ add_action( 'init', 'featured_post_block_featured_post_block_block_init' );
  *
  * @return string The rendered output.
  */
-function featured_post_block_featured_post_block_render_callback( $attributes, $content, $block ) {
+function featured_content_block_featured_content_block_render_callback( $attributes, $content, $block ) {
 	ob_start();
 	require plugin_dir_path( __FILE__ ) . 'build/template.php';
 	return ob_get_clean();

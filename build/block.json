@@ -1,14 +1,45 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "featured-post-block/featured-post-block",
+  "name": "featured-content-block/featured-content-block",
   "version": "1.0.0",
-  "title": "Featured Post Block",
+  "title": "Featured Content Block",
   "category": "widgets",
   "supports": {
-    "html": false
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "__experimentalLayout": true
   },
-  "textdomain": "featured-post-block",
+  "attributes": {
+    "postId": {
+      "type": "number",
+      "default": 0
+    },
+    "postType": {
+      "type": "string",
+      "default": "post"
+    },
+    "queryId": {
+      "type": "number",
+      "default": 100
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "namespace": {
+      "type": "string"
+    }
+  },
+  "providesContext": {
+    "postId": "postId",
+    "postType": "postType",
+    "queryId": "queryId"
+  },
+  "textdomain": "featured-content-block",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"
