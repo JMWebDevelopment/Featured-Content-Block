@@ -87,3 +87,14 @@ function featured_content_block_enqueue_scripts() {
 
 }
 add_action( 'enqueue_block_editor_assets', 'featured_content_block_enqueue_scripts' );
+
+function featured_content_block_register_pattern_categories() {
+	register_block_pattern_category(
+		'featured-content-block-patterns',
+    	array( 'label' => esc_html__( 'Featured Content Block', 'featured-content-block' ) )
+	);
+}
+add_action( 'init', 'featured_content_block_register_pattern_categories' );
+
+// Load the block patterns
+require_once plugin_dir_path( __FILE__ ) . 'patterns/patterns.php';
