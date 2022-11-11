@@ -45,7 +45,6 @@ function featured_content_block_render_callback( $attributes, $content, $block )
 
 function featured_content_block_get_post_types_list() {
 	$post_types_args  = array(
-		'publicly_queryable' => true,
 		'public'             => true,
 		'show_in_rest'       => true,
 	);
