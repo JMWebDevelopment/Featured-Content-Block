@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Featured Content Block\n"
+"POT-Creation-Date: 2022-11-13 15:11-0600\n"
+"PO-Revision-Date: 2022-11-13 15:18-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: featured-content-block.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#. Plugin Name of the plugin/theme
+#: featured-content-block.php:99
+#, fuzzy
+msgid "Featured Content Block"
+msgstr "Ausgewählter Inhaltsblock"
+
+#: patterns/featured-content-block-reverse-row-photo-left.php:15
+#, fuzzy
+msgid "Featured Content - Row with Left Photo and Reverse Background"
+msgstr ""
+"Ausgewählter Inhalt - Zeile mit linkem Foto und umgekehrtem "
+"Hintergrund"
+
+#: patterns/featured-content-block-reverse-row-photo-left.php:29
+#: patterns/featured-content-block-reverse-row-photo-right.php:25
+#: patterns/featured-content-block-row-photo-left.php:29
+#: patterns/featured-content-block-row-photo-right.php:25
+#: patterns/featured-content-column-pattern.php:25
+#: patterns/featured-content-column-reverse-pattern.php:25
+#, fuzzy
+msgid "Read This Post"
+msgstr "Diesen Beitrag lesen"
+
+#: patterns/featured-content-block-reverse-row-photo-right.php:15
+#, fuzzy
+msgid "Featured Content - Row with Right Photo and Reverse Background"
+msgstr ""
+"Ausgewählter Inhalt - Zeile mit rechtem Foto und umgekehrtem "
+"Hintergrund"
+
+#: patterns/featured-content-block-row-photo-left.php:15
+#, fuzzy
+msgid "Featured Content - Row with Left Photo"
+msgstr "Ausgewählter Inhalt - Reihe mit linkem Foto"
+
+#: patterns/featured-content-block-row-photo-right.php:15
+#, fuzzy
+msgid "Featured Content - Row with Right Photo"
+msgstr "Ausgewählter Inhalt - Zeile mit rechtem Foto"
+
+#: patterns/featured-content-column-pattern.php:15
+#, fuzzy
+msgid "Featured Content - Column"
+msgstr "Ausgewählter Inhalt - Kolumne"
+
+#: patterns/featured-content-column-reverse-pattern.php:15
+#, fuzzy
+msgid "Featured Content - Column with Reverse Background"
+msgstr "Ausgewählter Inhalt - Spalte mit umgekehrtem Hintergrund"
+
+#: src/edit.js:59
+msgid "Featured Content Settings"
+msgstr "Featured Inhalte Einstellungen"
+
+#: src/edit.js:61
+msgid "Select Post"
+msgstr "Beitrag auswählen"
+
+#: src/edit.js:86
+#, fuzzy
+msgid "Please select a post from the right side"
+msgstr "Bitte wählen Sie einen Beitrag auf der rechten Seite"
+
+#. Plugin URI of the plugin/theme
+msgid "https://jacobmartella.com/downloads/featured-content-block/"
+msgstr ""
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Easily show a specific post or other custom post type on a page and "
+"customize how it looks."
+msgstr ""
+"Zeigen Sie ganz einfach einen bestimmten Beitrag oder einen anderen "
+"benutzerdefinierten Beitragstyp auf einer Seite an und passen Sie "
+"das Aussehen an."
+
+#. Author of the plugin/theme
+msgid "Jacob Martella Web Development"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://jacobmartella.com"
+msgstr ""

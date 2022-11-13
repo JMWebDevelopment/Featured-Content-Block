@@ -1,12 +1,17 @@
 <?php
 /**
  * Plugin Name:       Featured Content Block
+ * Plugin URI:        https://jacobmartella.com/downloads/featured-content-block/
+ * Description:       Easily show a specific post or other custom post type on a page and customize how it looks.
+ * Author:            Jacob Martella Web Development
+ * Author URI:        https://jacobmartella.com
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Version:           1.0.0
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       featured-content-block
+ * Domain Path:       /languages
  *
  * @package           featured-content-block
  */
@@ -95,6 +100,15 @@ function featured_content_block_register_pattern_categories() {
 	);
 }
 add_action( 'init', 'featured_content_block_register_pattern_categories' );
+
+function featured_content_block_load_textdomain( $mofile, $domain ) {
+	if ( 'my-domain' === $domain && false !== strpos( $mofile, WP_LANG_DIR . '/plugins/' ) ) {
+		$locale = apply_filters( 'plugin_locale', determine_locale(), $domain );
+		$mofile = WP_PLUGIN_DIR . '/' . dirname( plugin_basename( __FILE__ ) ) . '/languages/' . $domain . '-' . $locale . '.mo';
+	}
+	return $mofile;
+}
+add_filter( 'load_textdomain_mofile', 'featured_content_block_load_textdomain', 10, 2 );
 
 // Load the block patterns
 require_once plugin_dir_path( __FILE__ ) . 'patterns/patterns.php';
