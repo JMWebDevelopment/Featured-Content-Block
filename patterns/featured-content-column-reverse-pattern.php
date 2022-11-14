@@ -17,7 +17,7 @@ register_block_pattern(
 		'categories'    => array( 'featured-content-block-patterns' ),
 		'description'   => 'A Featured Content Block in a column layout with a reverse color scheme',
 		'content'       => '<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"black","textColor":"white","className":"featured-content-column-reverse-pattern","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group featured-content-column-reverse-pattern has-white-color has-black-background-color has-text-color has-background has-link-color"><!-- wp:featured-content-block/featured-content-block {"postId":1837} -->
+		<div class="wp-block-group featured-content-column-reverse-pattern has-white-color has-black-background-color has-text-color has-background has-link-color"><!-- wp:featured-content-block/featured-content-block {"postId":1} -->
 		<!-- wp:post-featured-image /-->
 
 		<!-- wp:post-title /-->

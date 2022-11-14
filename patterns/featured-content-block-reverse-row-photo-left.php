@@ -17,7 +17,7 @@ register_block_pattern(
 		'categories'    => array( 'featured-content-block-patterns' ),
 		'description'   => 'A Featured Content Block in a row layout with the featured photo on the left and a reverse background',
 		'content'       => '<!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"black","textColor":"white","className":"featured-content-block-reverse-row-photo-left","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group alignwide featured-content-block-reverse-row-photo-left has-white-color has-black-background-color has-text-color has-background has-link-color"><!-- wp:featured-content-block/featured-content-block {"postId":1837,"align":"wide"} -->
+		<div class="wp-block-group alignwide featured-content-block-reverse-row-photo-left has-white-color has-black-background-color has-text-color has-background has-link-color"><!-- wp:featured-content-block/featured-content-block {"postId":1,"align":"wide"} -->
 		<!-- wp:columns -->
 		<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center"><!-- wp:post-featured-image {"style":{"spacing":{"margin":{"bottom":"0px"}}}} /--></div>
